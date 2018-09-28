@@ -1,0 +1,28 @@
+{% extends "bootstrap/base.html" %}
+{% block title %}Index{% endblock %}
+
+{% block content %}
+<div style="background-color:#000000;" >   
+    
+    <div align="center">
+        <img id= photo height=800 src="{{user_image}}">
+    </div>
+    <div  align="center">    
+        <form action="/get_image" method="get">
+        <button class="btn btn-warning btn-block" type="submit">Next</button>
+        </form>
+    </div>
+
+</div>
+
+<style>
+div {
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+}
+
+
+</style>
+{% endblock %}
